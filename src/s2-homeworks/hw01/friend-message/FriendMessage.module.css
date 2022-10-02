@@ -20,7 +20,6 @@
 
 .friendText {
     font-family: 'Montserrat', sans-serif;
-    word-wrap: break-word;
     color: #FFFFFF;
     background: #F5F7FB;
     max-width: 500px;
@@ -50,6 +49,8 @@
 
 .friendMessageText {
     color: black;
+    width: 100%;
+    word-wrap: break-word;
 }
 
 .friendTime {
