@@ -50,9 +50,10 @@ const MessageSender = (props: any) => {
                     id={'hw1-textarea'}
                     className={s.textarea}
                     ref={textareaRef}
+                    style={{fontFamily: "Montserrat"}}
 
                     title={'Shift+Enter for send'}
-                    placeholder={'Type your message'}
+                    placeholder={'Type a message'}
                     value={text}
 
                     onChange={onChange}
@@ -61,6 +62,7 @@ const MessageSender = (props: any) => {
                 <button
                     id={'hw1-button'}
                     className={s.button}
+                    style={{fontFamily: "Montserrat"}}
 
                     onClick={addMessage}
                 >

@@ -1,11 +1,32 @@
+:root {
+    --primary-shadow: drop-shadow(1px 1px 3px rgba(29, 33, 38, 0.1));
+}
+
 .App {
     --header_height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    padding: 50px;
+    max-width: 960px;
 }
 
 .hw {
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hwTitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: left;
+}
 
+@media screen and (max-width: 640px) {
+    .App {
+        padding: 10px;
+    }
 }

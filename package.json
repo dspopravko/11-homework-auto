@@ -1,6 +1,6 @@
 {
   "name": "hws2",
-  "homepage": "http://IgnatZakalinsky.github.io/hws2",
+  "homepage": "https://dspopravko.github.io/10-incrementor",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -32,7 +32,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
