@@ -19,20 +19,20 @@ import GreetingContainer from './GreetingContainer'
 
 // types
 export type UserType = {
-    _id: any // need to fix any
-    name: any // need to fix any
+    _id: string
+    name: string
 }
 
-export const pureAddUserCallback = (name: any, setUsers: any, users: any) => { // need to fix any
-    const user = { // need to fix
-    }
-    setUsers([...users, user])
+export const pureAddUserCallback = (name: string,
+                                    setUsers: ([...UserType]) => void,
+                                    users: Array<UserType>) => {
+    setUsers([...users, {_id: v1(), name: name}])
 }
 
 const HW3 = () => {
-    const [users, setUsers] = useState<any>([]) // need to fix any
+    const [users, setUsers] = useState<UserType[]>([])
 
-    const addUserCallback = (name: any) => { // need to fix any
+    const addUserCallback = (name: string) => {
         pureAddUserCallback(name, setUsers, users)
     }
 

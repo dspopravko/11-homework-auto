@@ -43,13 +43,9 @@ export const filterAffairs = (affairs: AffairType[], filter: FilterType): Affair
         return affairs.filter(affair => affair.priority === 'middle')
     } else return affairs.filter(affair => affair.priority === 'low') // need to fix
 }
-export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => {
-    let newAffairs = affairs.filter(affair => affair._id !== _id);
-    return newAffairs.map((affair, index) => {
-        affair._id = index + 1
-        return affair
-    })
-}
+export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] =>
+    affairs.filter(affair => affair._id !== _id);
+
 
 function HW2() {
     const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs)
