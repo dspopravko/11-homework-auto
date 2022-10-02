@@ -8,15 +8,17 @@
     flex-direction: column;
     justify-content: space-around;
     margin: auto;
-    padding: 50px;
+    padding: 0 50px;
     max-width: 960px;
 }
 
 .hw {
     font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
 }
 
 .hwTitle {
+    margin-top: 35px;
     font-family: "Montserrat", sans-serif;
     font-size: 22px;
     font-weight: 600;
