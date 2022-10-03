@@ -1,4 +1,5 @@
 .sidebar {
+    visibility: hidden;
     position: absolute;
     left: -400px;
     padding-left: 20px;
@@ -14,6 +15,7 @@
 }
 
 .sidebar.open {
+    visibility: visible;
     background: #ffffff;
     display: flex;
     flex-direction: row-reverse;

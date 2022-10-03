@@ -12,9 +12,9 @@ export const pureAddUser = (name: string,
                             setName: (name: string) => void,
                             addUserCallback: (name: string) => void) => {
     // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
-    if (!name) setError("Your name is too short!")
+    if (!name.trim()) setError("Ошибка! Введите имя!")
     else {
-        addUserCallback(name)
+        addUserCallback(name.trim())
         setName("")
         setError("")
     }
@@ -22,7 +22,7 @@ export const pureAddUser = (name: string,
 
 export const pureOnBlur = (name: string,
                            setError: (error: string) => void) => {
-    if (!name) setError("Your name is too short!")
+    if (!name) setError("Ошибка! Введите имя!")
     else setError("")
 }
 
