@@ -12,11 +12,11 @@ const User: React.FC<UserPropsType> = ({ u }) => {
         <tr id={'hw8-user-' + u._id + '-' + u.age} className={s.item}>
             <td id={'hw8-user-name-' + u._id} className={s.nameCol}>
                 {/*отобразить имя*/}
-
+                {u.name}
             </td>
-            <td id={'hw8-user-age-' + u._id}>
+            <td id={'hw8-user-age-' + u._id} style={{fontWeight: "600"}}>
                 {/*отобразить возраст*/}
-
+                {u.age}
             </td>
         </tr>
     )
