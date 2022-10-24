@@ -1,8 +1,16 @@
 .container {
+    width: 200px;
 }
 
 .wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 50px auto 50px;
 }
 
 .number {
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
