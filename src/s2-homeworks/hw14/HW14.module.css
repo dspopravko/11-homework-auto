@@ -1,0 +1,14 @@
+.tech {
+    padding: 5px;
+    background: white;
+    width: 372px;
+}
+.tech:first-of-type{
+    background: red;
+}
+
+.loading {
+    position: absolute;
+    z-index: 1;
+    transform: translateX(300px);
+}
